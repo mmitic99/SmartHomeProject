@@ -1,4 +1,4 @@
-package smarthome.userservice;
+package smarthome.authservice;
 
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -7,10 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping(value = "/user", produces = MediaType.APPLICATION_JSON_VALUE)
+@RequestMapping(value = "/auth", produces = MediaType.APPLICATION_JSON_VALUE)
 public class Controller {
     @GetMapping("/check")
     public ResponseEntity<String> check(){
-        return ResponseEntity.ok("WORK");
+        return ResponseEntity.ok("auth WORK");
     }
 }
